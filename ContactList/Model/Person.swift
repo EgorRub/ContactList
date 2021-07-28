@@ -14,6 +14,9 @@ struct Person {
     let phone: String
     let email: String
     
+    var title: String {
+        "\(name) \(surname)"
+    }
 }
 //}
 //init(name:[String], surname:[String], phone: [String], email: [String]){

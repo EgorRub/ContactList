@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonDetailsViewController: UIViewController {
+class MorePersonDetailsViewController: UIViewController {
     
     @IBOutlet weak var contactNameTextField: UITextField!
     

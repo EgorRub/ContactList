@@ -9,7 +9,7 @@ import UIKit
 
 class PersonListTableViewController: UITableViewController {
     
-    private let personList = DataManager.shared.getPersonList()
+    let personList = DataManager.shared.getPersonList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +38,10 @@ class PersonListTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let personDetailsVC = segue.destination as? PersonDetailsViewController else { return }
+        guard let morePersonDetailsVC = segue.destination as? MorePersonDetailsViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let person = personList[indexPath.row]
-        personDetailsVC.personInfo = person
+        morePersonDetailsVC.personInfo = person
     }
 
 

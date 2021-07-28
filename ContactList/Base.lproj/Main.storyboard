@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1787" y="-587"/>
         </scene>
-        <!--Person Details View Controller-->
+        <!--More Person Details View Controller-->
         <scene sceneID="qUc-OG-rni">
             <objects>
-                <viewController id="Nn4-YX-mRX" customClass="PersonDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nn4-YX-mRX" customClass="MorePersonDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1J-0a-BI6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z07-uC-e0C">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="TjG-W7-OCa">
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="TextField" textAlignment="center" minimumFontSize="17" id="TjG-W7-OCa">
                             <rect key="frame" x="157.5" y="5" width="99" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>
@@ -138,13 +138,13 @@
         <!--Contacts-->
         <scene sceneID="wcJ-9z-qDe">
             <objects>
-                <tableViewController id="1V6-zR-sMB" sceneMemberID="viewController">
+                <tableViewController id="1V6-zR-sMB" customClass="PersonDetailsTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j26-zj-SWw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="obT-1U-Xnj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellList" id="obT-1U-Xnj">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="obT-1U-Xnj" id="qoN-u3-dhx">
